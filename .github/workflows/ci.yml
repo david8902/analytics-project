@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Configurar Python
+        run: uv python install 3.12
+
+      - name: Instalar dependencias
+        run: uv sync
+
+      - name: Ejecutar pruebas
+        run: uv run pytest
+
+      - name: Ejecutar Ruff
+        run: uv run ruff check .
