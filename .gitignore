@@ -5,12 +5,16 @@
 __pycache__/
 *.py[cod]
 
-# Datos
-data/raw/
+# Ignorar el dataset
+data/
+
+# Mantener la carpeta data/raw en el repositorio
+!data/raw/
+!data/raw/.gitkeep
 
 # Archivos del sistema
 .DS_Store
 Thumbs.db
 
-# Configuración de VS Code
+# VS Code
 .vscode/
