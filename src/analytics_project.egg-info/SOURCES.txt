@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/analytics/__init__.py
+src/analytics/extract.py
+src/analytics/quality.py
+src/analytics_project.egg-info/PKG-INFO
+src/analytics_project.egg-info/SOURCES.txt
+src/analytics_project.egg-info/dependency_links.txt
+src/analytics_project.egg-info/requires.txt
+src/analytics_project.egg-info/top_level.txt
+tests/test_environment.py
+tests/test_extract.py
+tests/test_quality.py

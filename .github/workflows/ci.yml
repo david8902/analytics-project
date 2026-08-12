@@ -24,7 +24,7 @@ jobs:
         run: uv sync
 
       - name: Ejecutar pruebas
-        run: uv run pytest
+        run: uv run pytest -v
 
       - name: Ejecutar Ruff
         run: uv run ruff check .
