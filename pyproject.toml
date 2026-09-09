@@ -23,3 +23,8 @@ line-length = 88
 
 [tool.ruff.lint]
 select = ["E", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# Los tests del laboratorio se entregan tal cual los da la guia: comparan
+# contra True/False explicitamente (E712) y no deben modificarse.
+"tests/*" = ["E712"]
